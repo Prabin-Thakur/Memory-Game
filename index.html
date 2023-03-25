@@ -1,114 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body class="body">
-    <div class="game">
-        <div class="header">
-            <div class="header_item item1">Time : <span class="time">100</span> </div>
-            <div class="header-item item2">Flips : <span class="flip">0</span> </div>
-        </div>
-    
-        <div class="container">
-            <div class="boxes box1" data-name="crab">
-                <img class="front front1" src="./images/card-game.svg" alt="card"/>
-                <img class="back back1" src="./images/crab.svg" alt="crab"/>
-            </div>
-            <div class="boxes box2" data-name="bison">
-                <img class="front front2" src="./images/card-game.svg" alt="card"/>
-                <img class="back back2" src="./images/bison.svg" alt="bison"/>
-            </div>
-            <div class="boxes box3" data-name="dolphin">
-                <img class="front front3" src="./images/card-game.svg " alt="card"/>
-                <img class="back back3" src="./images/dolphin.svg" alt="dolphin"/>
-            </div>
-            <div class="boxes box4" data-name="elephant">
-                <img class="front front4" src="./images/card-game.svg" alt="card"/>
-                <img class="back back4" src="./images/elephant.svg" alt="elephant"/>
-            </div>
-            <div class="boxes box5" data-name="toucan">
-                <img class="front front5" src="./images/card-game.svg" alt="card"/>
-                <img class="back back5" src="./images/toucan.svg" alt="toucan"/>
-            </div>
-            <div class="boxes box6" data-name="snake">
-                <img class="front front6" src="./images/card-game.svg" alt="card"/>
-                <img class="back back6" src="./images/snake.svg" alt="snake"/>
-            </div>
-            <div class="boxes box7" data-name="owl">
-                <img class="front front7" src="./images/card-game.svg" alt="card"/>
-                <img class="back back7" src="./images/owl.svg" alt="owl"/>
-            </div>
-            <div class="boxes box8" data-name="monkey">
-                <img class="front front8" src="./images/card-game.svg" alt="card"/>
-                <img class="back back8" src="./images/monkey.svg" alt="monkey"/>
-            </div>
-            <div class="boxes box9" data-name="frog">
-                <img class="front front9" src="./images/card-game.svg" alt="card"/>
-                <img class="back back9" src="./images/frog.svg" alt="frog"/>
-            </div>
-            <div class="boxes box10" data-name="dracula">
-                <img class="front front10" src="./images/card-game.svg" alt="card"/>
-                <img class="back back10" src="./images/dracula.svg" alt="dracula"/>
-            </div>
-            <div class="boxes box11" data-name="bison">
-                <img class="front front11" src="./images/card-game.svg" alt="card"/>
-                <img class="back back11" src="./images/bison.svg" alt="bison"/>
-            </div>
-            <div class="boxes box12" data-name="crab">
-                <img class="front front12" src="./images/card-game.svg" alt="card"/>
-                <img class="back back12" src="./images/crab.svg" alt="crab"/>
-            </div>
-            <div class="boxes box13" data-name="dolphin">
-                <img class="front front13" src="./images/card-game.svg" alt="card"/>
-                <img class="back back13" src="./images/dolphin.svg" alt="dolphin"/>
-            </div>
-            <div class="boxes box14" data-name="dracula">
-                <img class="front front14" src="./images/card-game.svg" alt="card"/>
-                <img class="back back14" src="./images/dracula.svg" alt="dracula"/>
-            </div>
-            <div class="boxes box15" data-name="elephant">
-                <img class="front front15" src="./images/card-game.svg" alt="card"/>
-                <img class="back back15" src="./images/elephant.svg" alt="elephant"/>
-            </div>
-            <div class="boxes box16" data-name="frog">
-                <img class="front front16" src="./images/card-game.svg" alt="card"/>
-                <img class="back back16" src="./images/frog.svg" alt="frog"/>
-            </div>
-            <div class="boxes box17" data-name="monkey">
-                <img class="front front17" src="./images/card-game.svg" alt="card"/>
-                <img class="back back17" src="./images/monkey.svg" alt="monkey"/>
-            </div>
-            <div class="boxes box18" data-name="owl">
-                <img class="front front18" src="./images/card-game.svg" alt="card"/>
-                <img class="back back18" src="./images/owl.svg" alt="owl"/>
-            </div>
-            <div class="boxes box19" data-name="snake">
-                <img class="front front19" src="./images/card-game.svg" alt="card"/>
-                <img class="back back19" src="./images/snake.svg" alt="snake"/>
-            </div>
-            <div class="boxes box20" data-name="toucan">
-                <img class="front front20" src="./images/card-game.svg" alt="card"/>
-                <img class="back back20" src="./images/toucan.svg" alt="toucan"/>
-            </div>
-        </div>    
-    </div>
-
-    <div class="start">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="game_container">
+      <div class="start">
         <h1 class="start_button">Click to start</h1>
-    </div>
+      </div>
 
-    <div class="restart">
+      <div class="restart">
         <h1 class="victory">Game Over</h1>
         <h2 class="restart_button">Click to restart</h2>
-    </div>
+      </div>
 
-    <script class="front" src="index.js"></script>
-</body>
+      <div class="game">
+        <div class="header">
+          <div class="header_item item1">
+            Time : <span class="time">100</span>
+          </div>
+          <div class="header-item item2">
+            Flips : <span class="flip">0</span>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="boxes box1" data-name="crab">
+            <img class="front front1" src="./images/card-game.svg" alt="card" />
+            <img class="back back1" src="./images/crab.svg" alt="crab" />
+          </div>
+          <div class="boxes box2" data-name="bison">
+            <img class="front front2" src="./images/card-game.svg" alt="card" />
+            <img class="back back2" src="./images/bison.svg" alt="bison" />
+          </div>
+          <div class="boxes box3" data-name="dolphin">
+            <img
+              class="front front3"
+              src="./images/card-game.svg "
+              alt="card"
+            />
+            <img class="back back3" src="./images/dolphin.svg" alt="dolphin" />
+          </div>
+          <div class="boxes box4" data-name="elephant">
+            <img class="front front4" src="./images/card-game.svg" alt="card" />
+            <img
+              class="back back4"
+              src="./images/elephant.svg"
+              alt="elephant"
+            />
+          </div>
+          <div class="boxes box5" data-name="toucan">
+            <img class="front front5" src="./images/card-game.svg" alt="card" />
+            <img class="back back5" src="./images/toucan.svg" alt="toucan" />
+          </div>
+          <div class="boxes box6" data-name="snake">
+            <img class="front front6" src="./images/card-game.svg" alt="card" />
+            <img class="back back6" src="./images/snake.svg" alt="snake" />
+          </div>
+          <div class="boxes box7" data-name="owl">
+            <img class="front front7" src="./images/card-game.svg" alt="card" />
+            <img class="back back7" src="./images/owl.svg" alt="owl" />
+          </div>
+          <div class="boxes box8" data-name="monkey">
+            <img class="front front8" src="./images/card-game.svg" alt="card" />
+            <img class="back back8" src="./images/monkey.svg" alt="monkey" />
+          </div>
+          <div class="boxes box9" data-name="frog">
+            <img class="front front9" src="./images/card-game.svg" alt="card" />
+            <img class="back back9" src="./images/frog.svg" alt="frog" />
+          </div>
+          <div class="boxes box10" data-name="dracula">
+            <img
+              class="front front10"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back10" src="./images/dracula.svg" alt="dracula" />
+          </div>
+          <div class="boxes box11" data-name="bison">
+            <img
+              class="front front11"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back11" src="./images/bison.svg" alt="bison" />
+          </div>
+          <div class="boxes box12" data-name="crab">
+            <img
+              class="front front12"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back12" src="./images/crab.svg" alt="crab" />
+          </div>
+          <div class="boxes box13" data-name="dolphin">
+            <img
+              class="front front13"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back13" src="./images/dolphin.svg" alt="dolphin" />
+          </div>
+          <div class="boxes box14" data-name="dracula">
+            <img
+              class="front front14"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back14" src="./images/dracula.svg" alt="dracula" />
+          </div>
+          <div class="boxes box15" data-name="elephant">
+            <img
+              class="front front15"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img
+              class="back back15"
+              src="./images/elephant.svg"
+              alt="elephant"
+            />
+          </div>
+          <div class="boxes box16" data-name="frog">
+            <img
+              class="front front16"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back16" src="./images/frog.svg" alt="frog" />
+          </div>
+          <div class="boxes box17" data-name="monkey">
+            <img
+              class="front front17"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back17" src="./images/monkey.svg" alt="monkey" />
+          </div>
+          <div class="boxes box18" data-name="owl">
+            <img
+              class="front front18"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back18" src="./images/owl.svg" alt="owl" />
+          </div>
+          <div class="boxes box19" data-name="snake">
+            <img
+              class="front front19"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back19" src="./images/snake.svg" alt="snake" />
+          </div>
+          <div class="boxes box20" data-name="toucan">
+            <img
+              class="front front20"
+              src="./images/card-game.svg"
+              alt="card"
+            />
+            <img class="back back20" src="./images/toucan.svg" alt="toucan" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer class="front" src="index.js"></script>
+  </body>
 </html>
